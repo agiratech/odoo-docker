@@ -1,12 +1,11 @@
-
-# Usage
+# Instructions
 
 Give full permission to the folders so that the containers can access the directory and files.```
 $ sudo chmod -R 777 addons
 $ sudo chmod -R 777 etc
 ```
 
- To start the container:
+To start the container:
 ```
 $ docker-compose up
 ```
@@ -33,4 +32,3 @@ The **addons** folder contains custom addons. We can add our custom module to th
 ![odoo-13-welcome-docker](screenshots/odoo-13.png)
 
 ![odoo-13-apps-docker](screenshots/odoo-13-apps.png)
-
