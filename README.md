@@ -1,6 +1,7 @@
 # Instructions
 
-Give full permission to the folders so that the containers can access the directory and files.```
+Give full permission to the folders so that the containers can access the directory and files.
+```
 $ sudo chmod -R 777 addons
 $ sudo chmod -R 777 etc
 ```
