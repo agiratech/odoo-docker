@@ -1,0 +1,988 @@
+2020-04-30 06:03:43,805 1 INFO ? odoo: Odoo version 13.0-20200417 
+2020-04-30 06:03:43,805 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2020-04-30 06:03:43,805 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/etc/odoo/addons/13.0', '/mnt/extra-addons'] 
+2020-04-30 06:03:43,805 1 INFO ? odoo: database: odoo@db:5432 
+2020-04-30 06:03:44,073 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2020-04-30 06:03:44,213 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2020-04-30 06:03:44,214 1 INFO ? odoo.service.server: Watching addons folder /etc/odoo/addons/13.0 
+2020-04-30 06:03:44,214 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2020-04-30 06:03:44,532 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2020-04-30 06:03:44,533 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on af0bea5e1bde:8069 
+2020-04-30 06:04:16,189 1 INFO ? odoo.http: HTTP Configuring static files 
+2020-04-30 06:04:16,202 1 INFO ? odoo.http: Generating nondb routing 
+2020-04-30 06:04:16,219 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET / HTTP/1.1" 303 - 1 0.003 0.023
+2020-04-30 06:04:16,240 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web HTTP/1.1" 303 - 2 0.005 0.011
+2020-04-30 06:04:16,435 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/database/selector HTTP/1.1" 200 - 2 0.005 0.185
+2020-04-30 06:04:16,512 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/fontawesome/css/font-awesome.css HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,529 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/bootstrap/js/util.js HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,535 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/bootstrap/css/bootstrap.css HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,536 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/bootstrap/js/alert.js HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,551 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/jquery/jquery.js HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,554 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/bootstrap/js/index.js HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,555 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/bootstrap/js/button.js HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,585 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/bootstrap/js/carousel.js HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,585 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/bootstrap/js/collapse.js HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,585 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/bootstrap/js/dropdown.js HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,585 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/bootstrap/js/modal.js HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,611 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/bootstrap/js/tooltip.js HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,620 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/popper/popper.js HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,646 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/bootstrap/js/popover.js HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,655 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/bootstrap/js/scrollspy.js HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,655 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/lib/bootstrap/js/tab.js HTTP/1.1" 200 - - - -
+2020-04-30 06:04:16,710 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:16] "GET /web/static/src/img/logo2.png HTTP/1.1" 200 - - - -
+2020-04-30 06:04:17,102 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:17] "GET /web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - - - -
+2020-04-30 06:04:17,378 1 INFO ? werkzeug: 172.24.0.1 - - [30/Apr/2020 06:04:17] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 - - - -
+2020-04-30 08:18:59,158 1 INFO ? odoo.service.server: Initiating shutdown 
+2020-04-30 08:18:59,325 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2020-05-03 11:06:43,571 1 INFO ? odoo: Odoo version 13.0-20200417 
+2020-05-03 11:06:43,676 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2020-05-03 11:06:43,847 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/etc/odoo/addons/13.0', '/mnt/extra-addons'] 
+2020-05-03 11:06:43,848 1 INFO ? odoo: database: odoo@db:5432 
+2020-05-03 11:06:57,714 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2020-05-03 11:07:18,870 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2020-05-03 11:07:18,870 1 INFO ? odoo.service.server: Watching addons folder /etc/odoo/addons/13.0 
+2020-05-03 11:07:18,870 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2020-05-03 11:08:13,890 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2020-05-03 11:08:13,900 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on af0bea5e1bde:8069 
+2020-05-04 05:43:48,261 1 INFO ? odoo: Odoo version 13.0-20200417 
+2020-05-04 05:43:48,322 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2020-05-04 05:43:48,323 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/etc/odoo/addons/13.0', '/mnt/extra-addons'] 
+2020-05-04 05:43:48,323 1 INFO ? odoo: database: odoo@db:5432 
+2020-05-04 05:44:02,692 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2020-05-04 05:44:17,397 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2020-05-04 05:44:17,398 1 INFO ? odoo.service.server: Watching addons folder /etc/odoo/addons/13.0 
+2020-05-04 05:44:17,398 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2020-05-04 05:45:48,146 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2020-05-04 05:45:48,152 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on af0bea5e1bde:8069 
+2020-05-04 11:53:13,994 1 INFO ? odoo.http: HTTP Configuring static files 
+2020-05-04 11:53:16,095 1 INFO ? odoo.http: Generating nondb routing 
+2020-05-04 11:53:16,504 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:53:16] "GET / HTTP/1.1" 303 - 1 0.533 1.807
+2020-05-04 11:53:16,664 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:53:16] "GET /web HTTP/1.1" 303 - 2 0.015 0.028
+2020-05-04 11:53:17,699 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:53:17] "GET /web/database/selector HTTP/1.1" 200 - 2 0.014 1.010
+2020-05-04 11:53:17,996 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:53:17] "GET /web/static/lib/bootstrap/css/bootstrap.css HTTP/1.1" 200 - - - -
+2020-05-04 11:53:18,028 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:53:18] "GET /web/static/lib/jquery/jquery.js HTTP/1.1" 200 - - - -
+2020-05-04 11:53:18,047 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:53:18] "GET /web/static/lib/popper/popper.js HTTP/1.1" 200 - - - -
+2020-05-04 11:53:18,985 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:53:18] "GET /web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - - - -
+2020-05-04 11:54:07,021 1 INFO ? odoo.service.server: Initiating shutdown 
+2020-05-04 11:54:07,021 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2020-05-04 11:54:38,020 1 INFO ? odoo: Odoo version 13.0-20200417 
+2020-05-04 11:54:38,020 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2020-05-04 11:54:38,020 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/etc/odoo/addons/13.0', '/mnt/extra-addons'] 
+2020-05-04 11:54:38,021 1 INFO ? odoo: database: odoo@db:5432 
+2020-05-04 11:54:39,242 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2020-05-04 11:54:40,538 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2020-05-04 11:54:40,541 1 INFO ? odoo.service.server: Watching addons folder /etc/odoo/addons/13.0 
+2020-05-04 11:54:40,542 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2020-05-04 11:54:40,892 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2020-05-04 11:54:40,897 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 7b41d62ce155:8069 
+2020-05-04 11:54:41,236 1 INFO ? odoo.http: HTTP Configuring static files 
+2020-05-04 11:54:41,356 1 INFO ? odoo.http: Generating nondb routing 
+2020-05-04 11:54:41,397 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:54:41] "GET / HTTP/1.1" 303 - 1 0.009 0.149
+2020-05-04 11:54:41,417 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:54:41] "GET /web HTTP/1.1" 303 - 2 0.005 0.011
+2020-05-04 11:54:41,536 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:54:41] "GET /web/database/selector HTTP/1.1" 200 - 2 0.005 0.111
+2020-05-04 11:54:46,946 1 INFO ? odoo.service.server: Initiating shutdown 
+2020-05-04 11:54:46,946 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2020-05-04 11:57:01,990 1 INFO ? odoo: Odoo version 13.0-20200417 
+2020-05-04 11:57:01,990 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2020-05-04 11:57:01,990 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/etc/odoo/addons/13.0', '/mnt/extra-addons'] 
+2020-05-04 11:57:01,990 1 INFO ? odoo: database: odoo@db:5432 
+2020-05-04 11:57:02,260 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2020-05-04 11:57:02,404 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2020-05-04 11:57:02,404 1 INFO ? odoo.service.server: Watching addons folder /etc/odoo/addons/13.0 
+2020-05-04 11:57:02,404 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2020-05-04 11:57:02,730 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2020-05-04 11:57:02,734 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 7b41d62ce155:8069 
+2020-05-04 11:57:10,598 1 INFO ? odoo.http: HTTP Configuring static files 
+2020-05-04 11:57:10,610 1 INFO ? odoo.http: Generating nondb routing 
+2020-05-04 11:57:10,623 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 11:57:10,663 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:57:10] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.059
+2020-05-04 11:57:28,567 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 11:57:28,569 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:57:28] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.020
+2020-05-04 11:57:29,508 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:57:29] "GET /web/database/selector HTTP/1.1" 200 - 2 0.009 0.150
+2020-05-04 11:57:29,854 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:57:29] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 - - - -
+2020-05-04 11:57:56,571 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 11:57:56,574 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:57:56] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.018
+2020-05-04 11:58:26,558 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 11:58:26,563 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 11:58:26] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.015
+2020-05-04 11:58:38,836 1 INFO ? odoo.service.server: Initiating shutdown 
+2020-05-04 11:58:38,837 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2020-05-04 12:27:31,438 1 INFO ? odoo: Odoo version 13.0-20200417 
+2020-05-04 12:27:31,439 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2020-05-04 12:27:31,439 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/etc/odoo/addons/13.0', '/mnt/extra-addons'] 
+2020-05-04 12:27:31,439 1 INFO ? odoo: database: odoo@db:5432 
+2020-05-04 12:27:31,694 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2020-05-04 12:27:31,848 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2020-05-04 12:27:31,849 1 INFO ? odoo.service.server: Watching addons folder /etc/odoo/addons/13.0 
+2020-05-04 12:27:31,849 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2020-05-04 12:27:32,169 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2020-05-04 12:27:32,171 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 7b41d62ce155:8069 
+2020-05-04 12:27:34,595 1 INFO ? odoo.http: HTTP Configuring static files 
+2020-05-04 12:27:34,606 1 INFO ? odoo.http: Generating nondb routing 
+2020-05-04 12:27:34,619 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:27:34,622 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:27:34] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.021
+2020-05-04 12:27:54,564 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:27:54,567 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:27:54] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.017
+2020-05-04 12:28:12,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:28:12,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:28:12] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 12:28:25,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:28:25,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:28:25] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 12:28:46,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:28:46,552 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:28:46] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 12:29:18,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:29:18,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:29:18] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 12:29:36,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:29:36,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:29:36] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.009
+2020-05-04 12:30:00,568 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:30:00,573 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:30:00] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.019
+2020-05-04 12:30:23,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:30:23,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:30:23] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.009
+2020-05-04 12:30:54,571 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:30:54,573 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:30:54] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.018
+2020-05-04 12:31:26,592 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:31:26,597 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:31:26] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.010 0.020
+2020-05-04 12:31:46,561 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:31:46,564 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:31:46] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.015
+2020-05-04 12:32:06,558 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:32:06,563 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:32:06] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.016
+2020-05-04 12:32:28,579 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:32:28,581 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:32:28] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.038
+2020-05-04 12:32:42,558 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:32:42,563 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:32:42] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.016
+2020-05-04 12:33:06,570 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:33:06,574 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:33:06] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.018
+2020-05-04 12:33:26,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:33:26,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:33:26] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 12:33:40,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:33:40,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:33:40] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.010
+2020-05-04 12:34:06,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:34:06,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:34:06] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 12:34:20,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:34:20,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:34:20] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 12:34:34,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:34:34,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:34:34] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 12:34:54,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:34:54,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:34:54] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 12:35:10,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:35:10,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:35:10] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 12:35:42,576 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:35:42,580 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:35:42] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.021
+2020-05-04 12:36:02,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:36:02,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:36:02] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 12:36:22,576 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:36:22,580 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:36:22] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.020
+2020-05-04 12:36:38,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:36:38,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:36:38] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 12:36:58,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:36:58,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:36:58] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 12:37:22,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:37:22,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:37:22] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 12:37:52,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:37:52,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:37:52] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 12:38:24,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:38:24,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:38:24] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 12:38:52,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:38:52,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:38:52] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 12:39:20,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:39:20,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:39:20] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 12:39:38,555 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:39:38,557 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:39:38] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 12:40:10,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:40:10,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:40:10] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 12:40:30,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:40:30,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:40:30] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 12:40:53,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:40:53,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:40:53] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 12:41:18,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:41:18,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:41:18] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.009
+2020-05-04 12:41:44,549 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:41:44,551 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:41:44] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
+2020-05-04 12:42:08,534 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:42:08] "GET /web/database/selector HTTP/1.1" 200 - 2 0.013 0.276
+2020-05-04 12:42:12,546 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:42:12,548 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:42:12] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 12:42:26,599 1 INFO None odoo.service.db: Create database `odoo-docker`. 
+2020-05-04 12:42:33,657 1 INFO odoo-docker odoo.modules.loading: loading 1 modules... 
+2020-05-04 12:42:33,919 1 INFO odoo-docker odoo.modules.registry: module base: creating or updating database tables 
+2020-05-04 12:42:38,174 1 INFO odoo-docker odoo.models: Computing parent_path for table ir_ui_menu... 
+2020-05-04 12:42:48,459 1 INFO odoo-docker odoo.models: Computing parent_path for table res_partner_category... 
+2020-05-04 12:42:54,056 1 INFO odoo-docker odoo.models: Storing computed values of relation_field_id 
+2020-05-04 12:42:54,056 1 INFO odoo-docker odoo.models: Storing computed values of related_field_id 
+2020-05-04 12:42:54,456 1 INFO odoo-docker odoo.models: Storing computed values of model_name 
+2020-05-04 12:42:54,614 1 INFO odoo-docker odoo.models: Storing computed values of cron_name 
+2020-05-04 12:42:54,720 1 INFO odoo-docker odoo.models: Storing computed values of global 
+2020-05-04 12:42:54,944 1 INFO odoo-docker odoo.models: Storing computed values of menus_by_module 
+2020-05-04 12:42:54,944 1 INFO odoo-docker odoo.models: Storing computed values of reports_by_module 
+2020-05-04 12:42:54,944 1 INFO odoo-docker odoo.models: Storing computed values of views_by_module 
+2020-05-04 12:42:55,239 1 INFO odoo-docker odoo.models: Storing computed values of display_name 
+2020-05-04 12:42:55,239 1 INFO odoo-docker odoo.models: Storing computed values of partner_share 
+2020-05-04 12:42:55,239 1 INFO odoo-docker odoo.models: Storing computed values of commercial_partner_id 
+2020-05-04 12:42:55,239 1 INFO odoo-docker odoo.models: Storing computed values of commercial_company_name 
+2020-05-04 12:42:55,297 1 INFO odoo-docker odoo.models: Storing computed values of sanitized_acc_number 
+2020-05-04 12:42:55,349 1 INFO odoo-docker odoo.models: Storing computed values of decimal_places 
+2020-05-04 12:42:55,426 1 INFO odoo-docker odoo.models: Storing computed values of logo_web 
+2020-05-04 12:42:55,427 1 INFO odoo-docker odoo.models: Storing computed values of email 
+2020-05-04 12:42:55,427 1 INFO odoo-docker odoo.models: Storing computed values of phone 
+2020-05-04 12:42:55,517 1 INFO odoo-docker odoo.models: Storing computed values of share 
+2020-05-04 12:42:56,761 1 INFO odoo-docker odoo.modules.loading: loading base/data/res.lang.csv 
+2020-05-04 12:42:56,916 1 INFO odoo-docker odoo.modules.loading: loading base/data/res_lang_data.xml 
+2020-05-04 12:42:56,981 1 INFO odoo-docker odoo.modules.loading: loading base/data/res_partner_data.xml 
+2020-05-04 12:42:57,112 1 INFO odoo-docker odoo.modules.loading: loading base/data/res_company_data.xml 
+2020-05-04 12:42:57,197 1 INFO odoo-docker odoo.modules.loading: loading base/data/res_users_data.xml 
+2020-05-04 12:42:57,348 1 INFO odoo-docker odoo.modules.loading: loading base/data/report_paperformat_data.xml 
+2020-05-04 12:42:57,362 1 INFO odoo-docker odoo.modules.loading: loading base/data/res_currency_data.xml 
+2020-05-04 12:42:57,864 1 INFO odoo-docker odoo.modules.loading: loading base/data/res_country_data.xml 
+2020-05-04 12:42:59,668 1 INFO odoo-docker odoo.modules.loading: loading base/data/ir_demo_data.xml 
+2020-05-04 12:42:59,887 1 INFO odoo-docker odoo.modules.loading: loading base/security/base_groups.xml 
+2020-05-04 12:43:00,112 1 INFO odoo-docker odoo.modules.loading: loading base/security/base_security.xml 
+2020-05-04 12:43:00,322 1 INFO odoo-docker odoo.modules.loading: loading base/views/base_menus.xml 
+2020-05-04 12:43:00,506 1 INFO odoo-docker odoo.modules.loading: loading base/views/decimal_precision_views.xml 
+2020-05-04 12:43:00,564 1 INFO odoo-docker odoo.modules.loading: loading base/views/res_config_views.xml 
+2020-05-04 12:43:00,601 1 INFO odoo-docker odoo.modules.loading: loading base/data/res.country.state.csv 
+2020-05-04 12:43:02,740 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_actions_views.xml 
+2020-05-04 12:43:03,147 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_config_parameter_views.xml 
+2020-05-04 12:43:03,214 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_cron_views.xml 
+2020-05-04 12:43:03,332 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_filters_views.xml 
+2020-05-04 12:43:03,414 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_mail_server_views.xml 
+2020-05-04 12:43:03,495 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_model_views.xml 
+2020-05-04 12:43:04,078 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_attachment_views.xml 
+2020-05-04 12:43:04,180 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_rule_views.xml 
+2020-05-04 12:43:04,261 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_sequence_views.xml 
+2020-05-04 12:43:04,352 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_translation_views.xml 
+2020-05-04 12:43:04,482 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_ui_menu_views.xml 
+2020-05-04 12:43:04,579 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_ui_view_views.xml 
+2020-05-04 12:43:04,784 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_default_views.xml 
+2020-05-04 12:43:04,865 1 INFO odoo-docker odoo.modules.loading: loading base/data/ir_cron_data.xml 
+2020-05-04 12:43:04,885 1 INFO odoo-docker odoo.modules.loading: loading base/report/ir_model_report.xml 
+2020-05-04 12:43:04,895 1 INFO odoo-docker odoo.modules.loading: loading base/report/ir_model_templates.xml 
+2020-05-04 12:43:04,924 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_logging_views.xml 
+2020-05-04 12:43:04,998 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml 
+2020-05-04 12:43:05,029 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_module_views.xml 
+2020-05-04 12:43:05,254 1 INFO odoo-docker odoo.modules.loading: loading base/data/ir_module_category_data.xml 
+2020-05-04 12:43:05,382 1 INFO odoo-docker odoo.modules.loading: loading base/data/ir_module_module.xml 
+2020-05-04 12:43:05,532 1 INFO odoo-docker odoo.modules.loading: loading base/report/ir_module_reports.xml 
+2020-05-04 12:43:05,540 1 INFO odoo-docker odoo.modules.loading: loading base/report/ir_module_report_templates.xml 
+2020-05-04 12:43:05,573 1 INFO odoo-docker odoo.modules.loading: loading base/wizard/base_module_update_views.xml 
+2020-05-04 12:43:05,611 1 INFO odoo-docker odoo.modules.loading: loading base/wizard/base_language_install_views.xml 
+2020-05-04 12:43:05,641 1 INFO odoo-docker odoo.modules.loading: loading base/wizard/base_import_language_views.xml 
+2020-05-04 12:43:05,678 1 INFO odoo-docker odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml 
+2020-05-04 12:43:05,738 1 INFO odoo-docker odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml 
+2020-05-04 12:43:05,974 1 INFO odoo-docker odoo.modules.loading: loading base/wizard/base_export_language_views.xml 
+2020-05-04 12:43:06,024 1 INFO odoo-docker odoo.modules.loading: loading base/wizard/base_update_translations_views.xml 
+2020-05-04 12:43:06,066 1 INFO odoo-docker odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml 
+2020-05-04 12:43:06,115 1 INFO odoo-docker odoo.modules.loading: loading base/wizard/base_document_layout_views.xml 
+2020-05-04 12:43:06,169 1 INFO odoo-docker odoo.modules.loading: loading base/data/ir_actions_data.xml 
+2020-05-04 12:43:06,186 1 INFO odoo-docker odoo.modules.loading: loading base/data/ir_demo_failure_data.xml 
+2020-05-04 12:43:06,224 1 INFO odoo-docker odoo.modules.loading: loading base/views/res_company_views.xml 
+2020-05-04 12:43:06,316 1 INFO odoo-docker odoo.modules.loading: loading base/views/res_lang_views.xml 
+2020-05-04 12:43:06,396 1 INFO odoo-docker odoo.modules.loading: loading base/views/res_partner_views.xml 
+2020-05-04 12:43:06,871 1 INFO odoo-docker odoo.modules.loading: loading base/views/res_bank_views.xml 
+2020-05-04 12:43:07,010 1 INFO odoo-docker odoo.modules.loading: loading base/views/res_country_views.xml 
+2020-05-04 12:43:07,164 1 INFO odoo-docker odoo.modules.loading: loading base/views/res_currency_views.xml 
+2020-05-04 12:43:07,813 1 INFO odoo-docker odoo.modules.loading: loading base/views/res_users_views.xml 
+2020-05-04 12:43:08,335 1 INFO odoo-docker odoo.modules.loading: loading base/views/ir_property_views.xml 
+2020-05-04 12:43:08,503 1 INFO odoo-docker odoo.modules.loading: loading base/views/res_config_settings_views.xml 
+2020-05-04 12:43:08,529 1 INFO odoo-docker odoo.modules.loading: loading base/views/report_paperformat_views.xml 
+2020-05-04 12:43:08,611 1 INFO odoo-docker odoo.modules.loading: loading base/views/onboarding_views.xml 
+2020-05-04 12:43:08,723 1 INFO odoo-docker odoo.modules.loading: loading base/security/ir.model.access.csv 
+2020-05-04 12:43:09,336 1 INFO odoo-docker odoo.modules.loading: Module base: loading demo 
+2020-05-04 12:43:09,337 1 INFO odoo-docker odoo.modules.loading: loading base/data/res_company_demo.xml 
+2020-05-04 12:43:09,360 1 INFO odoo-docker odoo.modules.loading: loading base/data/res_users_demo.xml 
+2020-05-04 12:43:09,808 1 INFO odoo-docker odoo.modules.loading: loading base/data/res_partner_bank_demo.xml 
+2020-05-04 12:43:09,824 1 INFO odoo-docker odoo.modules.loading: loading base/data/res_currency_rate_demo.xml 
+2020-05-04 12:43:10,313 1 INFO odoo-docker odoo.modules.loading: loading base/data/res_bank_demo.xml 
+2020-05-04 12:43:10,331 1 INFO odoo-docker odoo.modules.loading: loading base/data/res_partner_demo.xml 
+2020-05-04 12:43:10,765 1 INFO odoo-docker odoo.modules.loading: loading base/data/res_partner_image_demo.xml 
+2020-05-04 12:43:11,548 1 INFO odoo-docker odoo.modules.loading: 1 modules loaded in 37.89s, 1 queries 
+2020-05-04 12:43:11,623 1 INFO odoo-docker odoo.modules.loading: updating modules list 
+2020-05-04 12:43:11,623 1 INFO odoo-docker odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.24.0.1 
+2020-05-04 12:43:12,350 1 INFO odoo-docker odoo.modules.loading: loading 8 modules... 
+2020-05-04 12:43:12,659 1 INFO odoo-docker odoo.modules.registry: module web: creating or updating database tables 
+2020-05-04 12:43:14,463 1 INFO odoo-docker odoo.modules.loading: loading web/security/ir.model.access.csv 
+2020-05-04 12:43:14,470 1 INFO odoo-docker odoo.modules.loading: loading web/views/webclient_templates.xml 
+2020-05-04 12:43:14,957 1 INFO odoo-docker odoo.modules.loading: loading web/views/report_templates.xml 
+2020-05-04 12:43:15,207 1 INFO odoo-docker odoo.modules.loading: loading web/data/report_layout.xml 
+2020-05-04 12:43:15,292 1 INFO odoo-docker odoo.modules.loading: Module web: loading demo 
+2020-05-04 12:43:16,199 1 INFO odoo-docker odoo.modules.registry: module base_import: creating or updating database tables 
+2020-05-04 12:43:20,632 1 INFO odoo-docker odoo.modules.loading: loading base_import/security/ir.model.access.csv 
+2020-05-04 12:43:20,756 1 INFO odoo-docker odoo.modules.loading: loading base_import/views/base_import_templates.xml 
+2020-05-04 12:43:20,866 1 INFO odoo-docker odoo.modules.loading: Module base_import: loading demo 
+2020-05-04 12:43:21,135 1 INFO odoo-docker odoo.modules.registry: module odoo_referral: creating or updating database tables 
+2020-05-04 12:43:21,182 1 INFO odoo-docker odoo.modules.loading: loading odoo_referral/views/templates.xml 
+2020-05-04 12:43:21,216 1 INFO odoo-docker odoo.modules.loading: Module odoo_referral: loading demo 
+2020-05-04 12:43:21,431 1 INFO odoo-docker odoo.modules.registry: module web_diagram: creating or updating database tables 
+2020-05-04 12:43:21,444 1 INFO odoo-docker odoo.modules.loading: loading web_diagram/views/web_diagram_templates.xml 
+2020-05-04 12:43:21,511 1 INFO odoo-docker odoo.modules.loading: Module web_diagram: loading demo 
+2020-05-04 12:43:22,138 1 INFO odoo-docker odoo.modules.registry: module web_editor: creating or updating database tables 
+2020-05-04 12:43:22,857 1 INFO odoo-docker odoo.modules.loading: loading web_editor/security/ir.model.access.csv 
+2020-05-04 12:43:22,884 1 INFO odoo-docker odoo.modules.loading: loading web_editor/views/editor.xml 
+2020-05-04 12:43:23,206 1 INFO odoo-docker odoo.modules.loading: loading web_editor/views/snippets.xml 
+2020-05-04 12:43:23,264 1 INFO odoo-docker odoo.modules.loading: Module web_editor: loading demo 
+2020-05-04 12:43:23,431 1 INFO odoo-docker odoo.modules.registry: module web_kanban_gauge: creating or updating database tables 
+2020-05-04 12:43:23,443 1 INFO odoo-docker odoo.modules.loading: loading web_kanban_gauge/views/web_kanban_gauge_templates.xml 
+2020-05-04 12:43:23,509 1 INFO odoo-docker odoo.modules.loading: Module web_kanban_gauge: loading demo 
+2020-05-04 12:43:23,737 1 INFO odoo-docker odoo.modules.registry: module web_tour: creating or updating database tables 
+2020-05-04 12:43:23,908 1 INFO odoo-docker odoo.modules.loading: loading web_tour/security/ir.model.access.csv 
+2020-05-04 12:43:23,950 1 INFO odoo-docker odoo.modules.loading: loading web_tour/security/ir.rule.csv 
+2020-05-04 12:43:23,976 1 INFO odoo-docker odoo.modules.loading: loading web_tour/views/tour_templates.xml 
+2020-05-04 12:43:24,088 1 INFO odoo-docker odoo.modules.loading: loading web_tour/views/tour_views.xml 
+2020-05-04 12:43:24,141 1 INFO odoo-docker odoo.modules.loading: Module web_tour: loading demo 
+2020-05-04 12:43:24,141 1 INFO odoo-docker odoo.modules.loading: loading web_tour/data/web_tour_demo.xml 
+2020-05-04 12:43:24,202 1 INFO odoo-docker odoo.modules.loading: 8 modules loaded in 11.85s, 0 queries 
+2020-05-04 12:43:24,495 1 INFO odoo-docker odoo.modules.loading: Modules loaded. 
+2020-05-04 12:43:24,556 1 INFO odoo-docker odoo.addons.base.models.ir_http: Generating routing map for key None 
+2020-05-04 12:43:24,622 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:43:24,714 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:43:24] "POST /longpolling/poll HTTP/1.1" 404 - 5 0.223 47.947
+2020-05-04 12:43:24,811 1 INFO odoo-docker odoo.addons.base.models.res_users: Login successful for db:odoo-docker login:admin from 172.24.0.1 
+2020-05-04 12:43:24,838 1 INFO odoo-docker odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2020-05-04 12:43:24,840 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:43:24] "POST /web/database/create HTTP/1.1" 303 - 25117 38.287 20.037
+2020-05-04 12:43:30,095 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:43:30] "GET /web/ HTTP/1.1" 200 - 289 0.209 5.041
+2020-05-04 12:43:30,197 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:43:30] "GET /web/content/422-b4c4eb4/web.assets_common.css HTTP/1.1" 200 - 5 0.007 0.026
+2020-05-04 12:43:30,222 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:43:30] "GET /web/content/423-7271006/web.assets_backend.css HTTP/1.1" 200 - 5 0.014 0.029
+2020-05-04 12:43:30,234 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:43:30] "GET /web/webclient/load_menus/003f16ffa5db0f0bc3d7182bd34ca35055762784 HTTP/1.1" 200 - 1 0.007 0.025
+2020-05-04 12:43:30,283 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:43:30] "GET /web/content/424-b4c4eb4/web.assets_common.js HTTP/1.1" 200 - 5 0.014 0.075
+2020-05-04 12:43:30,286 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:43:30] "GET /web/content/425-7271006/web.assets_backend.js HTTP/1.1" 200 - 5 0.034 0.052
+2020-05-04 12:43:30,571 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:43:30] "GET /web/webclient/qweb/894bddc6c900a1bc2d35b36548ac87a21e7dcaad?mods=base,web,base_import,odoo_referral,web_diagram,web_editor,web_kanban_gauge,web_tour HTTP/1.1" 200 - 1 0.000 0.016
+2020-05-04 12:43:30,816 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:43:30] "GET /web/static/src/img/user_menu_avatar.png HTTP/1.1" 200 - - - -
+2020-05-04 12:43:30,836 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:43:30] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 - 2 0.004 0.015
+2020-05-04 12:43:30,840 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:43:30] "GET /web/image?model=res.users&field=image_128&id=2 HTTP/1.1" 200 - 19 0.024 0.024
+2020-05-04 12:43:30,928 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:43:30] "POST /web/action/load HTTP/1.1" 200 - 39 0.038 0.035
+2020-05-04 12:43:31,109 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:43:31] "POST /web/dataset/call_kw/ir.module.module/load_views HTTP/1.1" 200 - 90 0.073 0.090
+2020-05-04 12:43:31,200 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:43:31] "POST /web/dataset/search_read HTTP/1.1" 200 - 5 0.005 0.010
+2020-05-04 12:43:33,001 1 INFO odoo-docker odoo.addons.base.models.ir_cron: Starting job `Base: Auto-vacuum internal data`. 
+2020-05-04 12:43:33,121 1 INFO odoo-docker odoo.addons.base.models.ir_attachment: filestore gc 285 checked, 2 removed 
+2020-05-04 12:43:33,142 1 INFO odoo-docker odoo.addons.base.models.ir_autovacuum: GC'd 0 user log entries 
+2020-05-04 12:43:33,164 1 INFO odoo-docker odoo.addons.base.models.ir_cron: Job `Base: Auto-vacuum internal data` done. 
+2020-05-04 12:43:48,562 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:43:48,566 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:43:48] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.005 0.014
+2020-05-04 12:44:16,552 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:44:16,555 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:44:16] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.010
+2020-05-04 12:44:32,547 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:44:32,549 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:44:32] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 12:44:48,547 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:44:48,550 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:44:48] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.007
+2020-05-04 12:45:06,547 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:45:06,549 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:45:06] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.006
+2020-05-04 12:45:24,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:45:24,548 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:45:24] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.006
+2020-05-04 12:45:44,548 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:45:44,551 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:45:44] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.007
+2020-05-04 12:46:12,548 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:46:12,551 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:46:12] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.006
+2020-05-04 12:46:42,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:46:42,548 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:46:42] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 12:46:59,547 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:46:59,549 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:46:59] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.006
+2020-05-04 12:47:20,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:47:20,548 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:47:20] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 12:47:48,549 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:47:48,551 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:47:48] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.006
+2020-05-04 12:48:08,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:48:08,548 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:48:08] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 12:48:30,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:48:30,549 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:48:30] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.006
+2020-05-04 12:48:47,554 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:48:47,556 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:48:47] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 12:49:02,548 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:49:02,550 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:49:02] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.006
+2020-05-04 12:49:32,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:49:32,548 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:49:32] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 12:49:52,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:49:52,548 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:49:52] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 12:50:22,547 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:50:22,549 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:50:22] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.006
+2020-05-04 12:50:36,543 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:50:36,545 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:50:36] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 12:51:08,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:51:08,548 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:51:08] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 12:51:26,547 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:51:26,548 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:51:26] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 12:51:44,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:51:44,548 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:51:44] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 12:51:58,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:51:58,548 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:51:58] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 12:52:30,547 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:52:30,550 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:52:30] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.006
+2020-05-04 12:53:00,548 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:53:00,551 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:53:00] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.007
+2020-05-04 12:53:20,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:53:20,548 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:53:20] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 12:53:52,552 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:53:52,555 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:53:52] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.011
+2020-05-04 12:54:24,562 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:54:24,567 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:54:24] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.003 0.013
+2020-05-04 12:54:38,547 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:54:38,549 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:54:38] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 12:54:54,547 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:54:54,549 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:54:54] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.006
+2020-05-04 12:55:14,551 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:55:14,554 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:55:14] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.003 0.009
+2020-05-04 12:55:44,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:55:44,548 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:55:44] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.004
+2020-05-04 12:56:10,553 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:56:10,557 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:56:10] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.012
+2020-05-04 12:56:21,673 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:56:21] "GET /web/session/logout HTTP/1.1" 303 - 1 0.000 0.005
+2020-05-04 12:56:21,681 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:56:21] "GET /web HTTP/1.1" 303 - 1 0.000 0.003
+2020-05-04 12:56:24,197 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:56:24] "GET /web/login HTTP/1.1" 200 - 250 0.133 2.379
+2020-05-04 12:56:24,281 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:56:24] "GET /web/content/427-ed746a2/web.assets_common_minimal_js.js HTTP/1.1" 200 - 9 0.013 0.019
+2020-05-04 12:56:24,281 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:56:24] "GET /web/content/426-466fe32/web.assets_frontend.css HTTP/1.1" 200 - 7 0.010 0.023
+2020-05-04 12:56:24,284 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:56:24] "GET /web/content/428-3a5eadd/web.assets_frontend_minimal_js.js HTTP/1.1" 200 - 6 0.012 0.013
+2020-05-04 12:56:24,298 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:56:24] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.001 0.004
+2020-05-04 12:56:24,397 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 12:56:24] "GET /web/static/src/fonts/google/Roboto/Roboto-Regular.ttf HTTP/1.1" 200 - - - -
+2020-05-04 12:56:24,451 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:56:24] "GET /web/content/429-b3712d3/web.assets_common_lazy.js HTTP/1.1" 200 - 6 0.003 0.021
+2020-05-04 12:56:24,623 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:56:24] "GET /web/content/430-141206c/web.assets_frontend_lazy.js HTTP/1.1" 200 - 6 0.003 0.009
+2020-05-04 12:56:24,648 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:56:24] "GET /web/webclient/translations/1588596984628?mods=&lang= HTTP/1.1" 200 - 5 0.003 0.008
+2020-05-04 12:56:27,878 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:56:27] "GET /web/database/manager HTTP/1.1" 200 - 4 0.006 0.066
+2020-05-04 12:56:38,548 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:56:38,550 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:56:38] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.006
+2020-05-04 12:57:08,548 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:57:08,550 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:57:08] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.007
+2020-05-04 12:57:40,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:57:40,549 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:57:40] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.006
+2020-05-04 12:57:54,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:57:54,548 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:57:54] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.006
+2020-05-04 12:58:10,547 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:58:10,549 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:58:10] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 12:58:29,548 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:58:29,551 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:58:29] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.007
+2020-05-04 12:58:56,560 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:58:56,565 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:58:56] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.003 0.014
+2020-05-04 12:59:21,547 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:59:21,549 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:59:21] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.006
+2020-05-04 12:59:46,549 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 12:59:46,550 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 12:59:46] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 13:00:10,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:00:10,548 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:00:10] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.006
+2020-05-04 13:00:40,547 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:00:40,549 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:00:40] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.006
+2020-05-04 13:00:58,574 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:00:58,582 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:00:58] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.006 0.025
+2020-05-04 13:01:12,546 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:01:12,548 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:01:12] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.004
+2020-05-04 13:01:25,559 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:01:25,565 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:01:25] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.003 0.015
+2020-05-04 13:01:29,025 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:01:29] "GET /web?db=odoo-docker HTTP/1.1" 303 - 1 0.001 0.005
+2020-05-04 13:01:29,062 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:01:29] "GET /web/login HTTP/1.1" 200 - 5 0.005 0.024
+2020-05-04 13:01:29,591 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:01:29] "GET /web/webclient/translations/1588597289570?mods=&lang= HTTP/1.1" 200 - 5 0.004 0.008
+2020-05-04 13:01:56,560 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:01:56,566 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:01:56] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.003 0.015
+2020-05-04 13:02:22,575 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:02:22,581 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:02:22] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.003 0.015
+2020-05-04 13:02:40,543 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:02:40,545 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:02:40] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.005
+2020-05-04 13:03:02,562 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:03:02,565 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:03:02] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.006
+2020-05-04 13:03:25,598 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:03:25,602 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:03:25] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.006 0.011
+2020-05-04 13:03:45,638 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:03:45,641 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:03:45] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.006
+2020-05-04 13:04:13,671 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:04:13,675 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:04:13] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.010
+2020-05-04 13:04:33,713 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:04:33,716 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:04:33] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.011
+2020-05-04 13:04:48,753 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:04:48,757 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:04:48] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.010
+2020-05-04 13:05:17,795 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:05:17,800 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:05:17] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.010
+2020-05-04 13:05:30,853 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:05:30,860 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:05:30] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.004 0.017
+2020-05-04 13:05:43,903 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:05:43,908 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:05:43] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.003 0.014
+2020-05-04 13:05:57,555 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:05:57,557 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:05:57] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.001 0.006
+2020-05-04 13:06:27,562 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:06:27,565 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:06:27] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.003 0.016
+2020-05-04 13:06:59,556 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:06:59,561 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:06:59] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.012
+2020-05-04 13:07:24,562 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:07:24,567 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:07:24] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.003 0.014
+2020-05-04 13:07:38,551 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:07:38,555 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:07:38] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.002 0.009
+2020-05-04 13:07:54,558 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:07:54,563 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:07:54] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.003 0.014
+2020-05-04 13:08:17,611 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:08:17,615 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:08:17] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.003 0.011
+2020-05-04 13:08:34,978 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:08:34] "GET / HTTP/1.1" 303 - 1 0.000 0.005
+2020-05-04 13:08:34,988 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:08:34] "GET /web HTTP/1.1" 303 - 1 0.000 0.003
+2020-05-04 13:08:35,057 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:08:35] "GET /web/login HTTP/1.1" 200 - 5 0.005 0.060
+2020-05-04 13:08:35,350 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:08:35] "GET /web/webclient/translations/1588597715329?mods=&lang= HTTP/1.1" 200 - 5 0.003 0.008
+2020-05-04 13:08:36,562 1 WARNING odoo-docker odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:08:36,570 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:08:36] "POST /longpolling/poll HTTP/1.1" 404 - 2 0.003 0.017
+2020-05-04 13:08:37,377 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:08:37] "GET /web/database/manager HTTP/1.1" 200 - 4 0.007 0.080
+2020-05-04 13:08:41,797 1 INFO None odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections to 'user=odoo password=xxx dbname=odoo-docker host=db port=5432 sslmode=prefer' 
+2020-05-04 13:08:42,351 1 INFO None odoo.service.db: DROP DB: odoo-docker 
+2020-05-04 13:08:42,393 1 INFO None werkzeug: 172.24.0.1 - - [04/May/2020 13:08:42] "POST /web/database/drop HTTP/1.1" 303 - 4 0.547 0.133
+2020-05-04 13:08:42,401 1 INFO odoo-docker odoo.sql_db: Connection to the database failed 
+2020-05-04 13:08:42,463 1 INFO odoo-docker werkzeug: 172.24.0.1 - - [04/May/2020 13:08:42] "GET /web/database/manager HTTP/1.1" 200 - 1 0.002 0.064
+2020-05-04 13:08:56,566 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:08:56,569 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:08:56] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.016
+2020-05-04 13:09:12,558 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:09:12,564 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:09:12] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.016
+2020-05-04 13:09:36,580 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:09:36,619 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:09:36] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.072
+2020-05-04 13:10:00,565 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:10:00,570 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:10:00] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.019
+2020-05-04 13:10:14,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:10:14,552 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:10:14] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
+2020-05-04 13:10:44,576 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:10:44,583 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:10:44] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.009 0.022
+2020-05-04 13:11:04,561 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:11:04,564 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:11:04] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.015
+2020-05-04 13:11:24,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:11:24,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:11:24] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 13:11:52,568 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:11:52,570 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:11:52] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.016
+2020-05-04 13:12:08,570 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:12:08,573 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:12:08] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.017
+2020-05-04 13:12:28,564 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:12:28,569 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:12:28] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.018
+2020-05-04 13:13:00,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:13:00,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:13:00] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:13:30,570 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:13:30,574 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:13:30] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.019
+2020-05-04 13:13:50,571 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:13:50,576 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:13:50] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.021
+2020-05-04 13:14:16,570 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:14:16,574 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:14:16] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.019
+2020-05-04 13:14:42,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:14:42,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:14:42] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:15:04,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:15:04,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:15:04] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:15:36,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:15:36,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:15:36] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 13:15:54,569 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:15:54,573 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:15:54] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.020
+2020-05-04 13:16:08,549 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:16:08,551 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:16:08] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 13:16:22,568 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:16:22,572 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:16:22] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.017
+2020-05-04 13:16:44,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:16:44,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:16:44] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:17:16,574 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:17:16,577 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:17:16] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.021
+2020-05-04 13:17:30,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:17:30,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:17:30] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.010
+2020-05-04 13:17:54,573 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:17:54,576 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:17:54] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.017
+2020-05-04 13:18:24,570 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:18:24,574 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:18:24] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.021
+2020-05-04 13:18:51,570 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:18:51,574 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:18:51] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.019
+2020-05-04 13:19:16,570 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:19:16,573 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:19:16] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.017
+2020-05-04 13:19:42,566 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:19:42,569 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:19:42] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.016
+2020-05-04 13:20:00,570 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:20:00,573 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:20:00] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.018
+2020-05-04 13:20:14,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:20:14,551 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:20:14] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 13:20:44,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:20:44,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:20:44] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 13:21:10,573 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:21:10,576 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:21:10] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.019
+2020-05-04 13:21:28,576 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:21:28,580 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:21:28] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.021
+2020-05-04 13:21:48,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:21:48,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:21:48] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:22:06,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:22:06,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:22:06] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:22:36,672 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:22:36,677 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:22:36] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.022 0.102
+2020-05-04 13:23:00,555 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:23:00,557 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:23:00] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
+2020-05-04 13:23:30,573 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:23:30,576 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:23:30] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.017
+2020-05-04 13:24:02,574 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:24:02,577 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:24:02] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.016
+2020-05-04 13:24:18,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:24:18,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:24:18] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:24:38,575 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:24:38,577 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:24:38] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.014
+2020-05-04 13:24:52,574 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:24:52,578 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:24:52] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.019
+2020-05-04 13:25:06,573 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:25:06,575 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:25:06] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.019
+2020-05-04 13:25:32,572 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:25:32,574 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:25:32] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.017
+2020-05-04 13:26:02,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:26:02,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:26:02] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 13:26:17,573 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:26:17,576 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:26:17] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.018
+2020-05-04 13:26:38,555 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:26:38,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:26:38] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
+2020-05-04 13:27:04,575 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:27:04,578 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:27:04] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.020
+2020-05-04 13:27:28,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:27:28,552 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:27:28] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 13:27:50,583 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:27:50,587 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:27:50] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.014 0.018
+2020-05-04 13:28:08,576 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:28:08,579 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:28:08] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.013
+2020-05-04 13:28:34,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:28:34,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:28:34] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 13:29:02,579 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:29:02,582 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:29:02] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.019
+2020-05-04 13:29:22,572 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:29:22,574 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:29:22] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.017
+2020-05-04 13:29:38,577 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:29:38,581 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:29:38] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.018
+2020-05-04 13:30:04,575 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:30:04,578 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:30:04] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.019
+2020-05-04 13:30:34,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:30:34,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:30:34] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.009
+2020-05-04 13:30:50,574 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:30:50,576 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:30:50] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.015
+2020-05-04 13:31:06,572 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:31:06,575 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:31:06] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.019
+2020-05-04 13:31:30,572 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:31:30,574 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:31:30] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.016
+2020-05-04 13:31:48,573 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:31:48,576 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:31:48] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.019
+2020-05-04 13:32:20,581 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:32:20,585 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:32:20] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.020
+2020-05-04 13:32:36,573 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:32:36,576 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:32:36] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.019
+2020-05-04 13:32:50,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:32:50,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:32:50] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 13:33:10,575 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:33:10,577 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:33:10] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.018
+2020-05-04 13:33:25,567 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:33:25,570 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:33:25] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.016
+2020-05-04 13:33:48,572 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:33:48,574 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:33:48] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.018
+2020-05-04 13:34:02,570 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:34:02,573 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:34:02] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.017
+2020-05-04 13:34:22,555 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:34:22,557 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:34:22] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:34:46,578 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:34:46,582 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:34:46] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.021
+2020-05-04 13:35:06,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:35:06,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:35:06] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 13:35:36,571 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:35:36,577 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:35:36] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.021
+2020-05-04 13:35:51,572 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:35:51,574 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:35:51] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.015
+2020-05-04 13:36:12,572 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:36:12,574 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:36:12] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.016
+2020-05-04 13:36:36,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:36:36,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:36:36] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 13:37:04,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:37:04,552 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:37:04] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 13:37:28,566 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:37:28,570 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:37:28] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.018
+2020-05-04 13:37:46,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:37:46,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:37:46] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 13:38:02,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:38:02,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:38:02] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
+2020-05-04 13:38:34,571 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:38:34,573 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:38:34] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.018
+2020-05-04 13:39:02,574 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:39:02,577 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:39:02] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.019
+2020-05-04 13:39:34,570 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:39:34,573 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:39:34] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.019
+2020-05-04 13:40:06,568 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:40:06,574 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:40:06] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.008 0.020
+2020-05-04 13:40:26,570 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:40:26,572 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:40:26] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.017
+2020-05-04 13:40:54,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:40:54,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:40:54] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 13:41:10,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:41:10,552 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:41:10] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:41:26,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:41:26,552 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:41:26] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 13:41:50,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:41:50,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:41:50] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 13:42:16,575 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:42:16,578 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:42:16] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.020
+2020-05-04 13:42:48,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:42:48,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:42:48] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 13:43:12,571 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:43:12,576 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:43:12] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.008 0.021
+2020-05-04 13:43:28,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:43:28,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:43:28] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:43:56,574 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:43:56,577 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:43:56] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.018
+2020-05-04 13:44:26,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:44:26,551 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:44:26] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 13:44:50,549 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:44:50,552 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:44:50] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 13:45:18,549 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:45:18,551 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:45:18] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.006
+2020-05-04 13:45:40,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:45:40,551 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:45:40] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 13:46:02,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:46:02,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:46:02] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 13:46:18,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:46:18,552 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:46:18] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
+2020-05-04 13:46:36,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:46:36,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:46:36] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 13:46:52,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:46:52,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:46:52] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 13:47:18,571 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:47:18,576 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:47:18] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.008 0.021
+2020-05-04 13:47:44,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:47:44,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:47:44] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
+2020-05-04 13:48:16,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:48:16,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:48:16] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:48:48,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:48:48,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:48:48] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
+2020-05-04 13:49:08,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:49:08,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:49:08] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 13:49:22,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:49:22,552 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:49:22] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 13:49:49,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:49:49,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:49:49] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:50:19,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:50:19,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:50:19] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:50:48,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:50:48,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:50:48] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
+2020-05-04 13:51:04,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:51:04,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:51:04] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.009
+2020-05-04 13:51:29,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:51:29,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:51:29] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 13:51:50,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:51:50,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:51:50] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 13:52:18,560 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:52:18,562 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:52:18] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.013
+2020-05-04 13:52:37,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:52:37,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:52:37] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:52:50,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:52:50,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:52:50] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:53:11,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:53:11,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:53:11] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 13:53:36,555 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:53:36,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:53:36] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:54:02,576 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:54:02,579 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:54:02] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.019
+2020-05-04 13:54:32,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:54:32,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:54:32] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 13:54:56,577 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:54:56,580 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:54:56] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.022
+2020-05-04 13:55:28,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:55:28,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:55:28] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:55:54,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:55:54,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:55:54] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.009
+2020-05-04 13:56:14,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:56:14,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:56:14] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:56:44,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:56:44,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:56:44] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 13:57:02,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:57:02,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:57:02] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.009
+2020-05-04 13:57:26,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:57:26,559 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:57:26] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.011
+2020-05-04 13:57:48,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:57:48,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:57:48] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.010
+2020-05-04 13:58:12,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:58:12,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:58:12] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:58:32,574 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:58:32,578 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:58:32] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.020
+2020-05-04 13:58:56,582 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:58:56,585 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:58:56] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.021
+2020-05-04 13:59:20,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:59:20,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:59:20] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 13:59:46,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:59:46,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:59:46] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 13:59:59,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 13:59:59,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 13:59:59] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:00:26,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:00:26,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:00:26] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:00:40,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:00:40,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:00:40] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:00:56,575 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:00:56,577 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:00:56] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.015
+2020-05-04 14:01:10,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:01:10,552 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:01:10] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 14:01:34,556 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:01:34,558 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:01:34] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.009
+2020-05-04 14:02:06,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:02:06,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:02:06] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:02:22,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:02:22,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:02:22] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:02:52,574 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:02:52,579 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:02:52] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.008 0.021
+2020-05-04 14:03:14,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:03:14,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:03:14] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 14:03:38,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:03:38,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:03:38] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:03:54,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:03:54,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:03:54] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:04:14,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:04:14,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:04:14] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:04:42,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:04:42,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:04:42] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:05:02,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:05:02,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:05:02] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:05:22,565 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:05:22,569 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:05:22] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.016
+2020-05-04 14:05:54,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:05:54,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:05:54] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:06:16,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:06:16,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:06:16] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:06:34,555 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:06:34,557 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:06:34] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:06:50,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:06:50,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:06:50] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.009
+2020-05-04 14:07:04,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:07:04,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:07:04] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 14:07:32,578 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:07:32,581 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:07:32] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.019
+2020-05-04 14:07:52,556 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:07:52,558 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:07:52] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:08:08,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:08:08,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:08:08] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 14:08:38,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:08:38,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:08:38] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:09:00,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:09:00,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:09:00] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:09:21,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:09:21,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:09:21] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:09:48,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:09:48,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:09:48] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 14:10:13,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:10:13,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:10:13] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 14:10:34,555 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:10:34,557 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:10:34] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
+2020-05-04 14:10:58,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:10:58,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:10:58] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:11:28,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:11:28,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:11:28] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:11:52,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:11:52,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:11:52] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 14:12:10,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:12:10,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:12:10] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:12:38,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:12:38,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:12:38] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.010
+2020-05-04 14:13:01,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:13:01,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:13:01] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:13:32,555 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:13:32,557 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:13:32] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:13:52,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:13:52,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:13:52] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 14:14:24,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:14:24,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:14:24] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:14:54,556 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:14:54,558 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:14:54] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:15:10,555 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:15:10,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:15:10] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:15:26,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:15:26,557 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:15:26] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:15:42,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:15:42,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:15:42] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:15:55,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:15:55,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:15:55] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:16:22,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:16:22,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:16:22] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 14:16:46,577 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:16:46,582 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:16:46] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.019
+2020-05-04 14:17:14,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:17:14,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:17:14] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:17:42,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:17:42,557 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:17:42] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:18:06,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:18:06,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:18:06] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:18:30,555 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:18:30,557 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:18:30] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 14:18:50,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:18:50,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:18:50] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:19:16,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:19:16,557 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:19:16] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:19:48,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:19:48,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:19:48] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 14:20:08,555 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:20:08,557 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:20:08] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
+2020-05-04 14:20:40,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:20:40,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:20:40] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.009
+2020-05-04 14:21:00,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:21:00,557 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:21:00] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:21:30,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:21:30,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:21:30] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:21:52,555 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:21:52,557 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:21:52] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 14:22:10,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:22:10,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:22:10] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 14:22:30,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:22:30,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:22:30] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:22:58,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:22:58,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:22:58] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 14:23:18,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:23:18,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:23:18] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
+2020-05-04 14:23:44,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:23:44,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:23:44] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 14:24:06,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:24:06,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:24:06] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:24:34,555 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:24:34,558 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:24:34] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 14:24:52,569 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:24:52,572 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:24:52] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.016
+2020-05-04 14:25:06,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:25:06,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:25:06] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
+2020-05-04 14:25:30,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:25:30,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:25:30] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 14:25:44,554 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:25:44,556 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:25:44] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:26:10,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:26:10,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:26:10] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 14:26:40,560 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:26:40,564 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:26:40] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.014
+2020-05-04 14:27:02,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:27:02,552 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:27:02] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 14:27:26,576 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:27:26,578 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:27:26] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.016
+2020-05-04 14:27:52,617 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:27:52,623 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:27:52] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.071
+2020-05-04 14:28:20,577 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:28:20,580 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:28:20] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.021
+2020-05-04 14:28:42,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:28:42,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:28:42] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 14:29:05,553 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:29:05,555 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:29:05] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:29:34,555 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:29:34,557 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:29:34] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.008
+2020-05-04 14:29:52,560 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:29:52,564 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:29:52] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.015
+2020-05-04 14:30:09,556 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:30:09,559 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:30:09] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.014
+2020-05-04 14:30:28,559 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:30:28,564 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:30:28] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.015
+2020-05-04 14:30:46,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:30:46,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:30:46] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
+2020-05-04 14:31:18,561 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:31:18,565 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:31:18] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.017
+2020-05-04 14:31:46,563 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:31:46,567 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:31:46] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.016
+2020-05-04 14:32:12,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:32:12,552 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:32:12] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:32:29,565 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:32:29,569 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:32:29] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.017
+2020-05-04 14:32:56,627 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:32:56,634 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:32:56] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.062 0.024
+2020-05-04 14:33:28,572 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:33:28,576 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:33:28] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.007 0.021
+2020-05-04 14:33:47,564 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:33:47,566 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:33:47] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.016
+2020-05-04 14:34:05,574 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:34:05,579 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:34:05] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.008 0.022
+2020-05-04 14:34:22,561 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:34:22,564 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:34:22] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.016
+2020-05-04 14:34:48,561 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:34:48,564 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:34:48] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.015
+2020-05-04 14:35:10,561 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:35:10,567 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:35:10] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.017
+2020-05-04 14:35:32,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:35:32,552 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:35:32] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.009
+2020-05-04 14:35:58,584 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:35:58,592 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:35:58] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.010 0.028
+2020-05-04 14:36:22,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:36:22,552 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:36:22] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.002 0.007
+2020-05-04 14:36:41,548 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:36:41,549 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:36:41] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
+2020-05-04 14:37:10,568 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:37:10,574 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:37:10] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.006 0.020
+2020-05-04 14:37:24,550 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:37:24,575 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:37:24] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.030
+2020-05-04 14:37:48,563 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:37:48,566 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:37:48] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.004 0.015
+2020-05-04 14:38:16,560 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:38:16,565 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:38:16] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.005 0.017
+2020-05-04 14:38:46,552 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:38:46,554 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:38:46] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.008
+2020-05-04 14:39:07,551 1 WARNING ? odoo.http: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again. 
+2020-05-04 14:39:07,553 1 INFO ? werkzeug: 172.24.0.1 - - [04/May/2020 14:39:07] "POST /longpolling/poll HTTP/1.1" 404 - 1 0.003 0.007
